@@ -1,5 +1,7 @@
 # Guía Azul
 
+**PICTURES ARE CURRENTLY NONEXISTENT AT THE MOMENT. Download when you have the time, the files are just with me**
+
 **Guía Azul** is a website designed to assist incoming freshmen and transferees at ADZU by providing valuable campus resources, navigation guides, and academic organization information. The website aims to enhance the transition experience by offering support for students through a user-friendly interface.
 
 ---
