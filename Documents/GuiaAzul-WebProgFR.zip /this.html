@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Campus Guide</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <!-- Dark/Light Mode Toggle -->
+    
+
+    <!-- Welcome Text -->
+    <div id="greeting"></div>
+
+    <!-- Navigation Bar (Tabs) -->
+    <nav>
+        <ul>
+            <li><a href="#home" class="tab-link active">Home</a></li>
+            <li><a href="#organizations" class="tab-link">Organizations</a></li>
+            <li><a href="#campus-guide" class="tab-link">Campus Guide</a></li>
+            <li><a href="#contact" class="tab-link">Contact</a></li>
+            <button class="mode-toggle" onclick="toggleMode()">🌙/🌞</button>
+        </ul>
+    </nav>
+
+    <!-- Content Sections -->
+    <section id="home" class="tab-content active">
+        <div class="homePage">
+            <h1 style="color: white;">Welcome to Guía Azul</h1>
+            <p style="color: lightcyan;">A campus guide for Freshmen of Ateneo de Zamboanga University</p>
+        </div>
+        <div class="carousel-container">
+            <div class="carousel">
+                <!-- SITEAO Slide -->
+                <div class="carousel-item">
+                    <div class="carousel-images">
+                        <img src="SITEAO2.png" alt="Event 1">
+                        <img src="SITEAO1.png" alt="Event 2">
+                        <img src="event3.jpg" alt="Event 3">
+                    </div>
+                    <div class="carousel-caption">
+                        <p>SITEAO!</p>
+                    </div>
+                </div>
+                <!-- LAAO Slide -->
+                <div class="carousel-item">
+                    <div class="carousel-images">
+                        <img src="LAAO1.png" alt="Event 4">
+                        <img src="LAAO2.png" alt="Event 5">
+                        <img src="LAAO3.png" alt="Event 6">
+                    </div>
+                    <div class="carousel-caption">
+                        <p>LAAO!</p>
+                    </div>
+                </div>
+                <!-- EAO Slide -->
+                <div class="carousel-item">
+                    <div class="carousel-images">
+                        <img src="EAO copy.png" alt="Event 7">
+                        <img src="EAO2.png" alt="Event 8">
+                        <img src="EAO3.png" alt="Event 9">
+                    </div>
+                    <div class="carousel-caption">
+                        <p>EAO!</p>
+                    </div>
+                </div>
+                <!-- NAO Slide -->
+                <div class="carousel-item">
+                    <div class="carousel-images">
+                        <img src="NAO1.png" alt="Event 10">
+                        <img src="NAO2.png" alt="Event 11">
+                        <img src="NAO3.png" alt="Event 12">
+                    </div>
+                    <div class="carousel-caption">
+                        <p>NAO!</p>
+                    </div>
+                </div>
+                <!-- AAO Slide -->
+                <div class="carousel-item">
+                    <div class="carousel-images">
+                        <img src="AAO1.png" alt="Event 13">
+                        <img src="AAO2.png" alt="Event 14">
+                        <img src="AAO3.png" alt="Event 15">
+                    </div>
+                    <div class="carousel-caption">
+                        <p>AAO</p>
+                    </div>
+                </div>
+                <!-- MAO Slide -->
+                <div class="carousel-item">
+                    <div class="carousel-images">
+                        <img src="MAO copy.png" alt="Event 16">
+                        <img src="MAO1.png" alt="Event 17">
+                        <img src="MAO2.png" alt="Event 18">
+                    </div>
+                    <div class="carousel-caption">
+                        <p>MAO!</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Carousel Controls -->
+            <button class="carousel-control prev" onclick="prevSlide()">&#10094;</button>
+            <button class="carousel-control next" onclick="nextSlide()">&#10095;</button>
+        </div>
+    </section>
+    
+    
+
+    <section id="organizations" class="tab-content">
+        <h1 style="margin-top: 300px; font-size: 70px; text-align: center;">Academic Organizations</h1>
+        <p style="text-align: center;margin-top: 300px;color: white;">Click AO cards to view social media pages and contact person</p>
+
+        <div class="cards-container">
+            <div class="card" onclick="showInfo('SITEAO')">
+                <img src="SITEAO.png" alt="SITEAO">
+                
+            </div>
+            <div class="card" onclick="showInfo('LAAO')">
+                <img src="LAAO.png" alt="LAAO">
+         
+            </div>
+            <div class="card" onclick="showInfo('EAO')">
+                <img src="EAO.png" alt="EAO">
+               
+            </div>
+            <div class="card" onclick="showInfo('MAO')">
+                <img src="MAO.png" alt="MAO">
+                
+            </div>
+            <div class="card" onclick="showInfo('NAO')">
+                <img src="NAO.png" alt="NAO">
+            
+            </div>
+            <div class="card" onclick="showInfo('AAO')">
+                <img src="AAO.png" alt="AAO">
+            
+            </div>
+        </div>
+        <div class="AOinfo">
+            <h1 style="color: yellow;">Accountancy Academic Organization(AAO)</h1>
+            <p>AAO in Ateneo de Zamboanga University (ADZU) stands for Accountancy Academic Organization. It is a student 
+                organization that primarily caters to accounting students at ADZU. The AAO aims to provide a platform for students 
+                pursuing accounting and related fields to develop their academic, leadership, and professional skills.</p>
+            <p>Programs Under AAO: </p>
+            <p>1.BS Accountancy</p>
+            <p>2.BS Management Accounting</p>
+        
+            <br>
+            <h1 style="color: blue;">Education Academic Organization(EAO)</h1>
+            <p>The Education Academic Organization (EAO) at Ateneo de Zamboanga University (ADZU) is a student organization that 
+                represents students enrolled in the College of Education. Its primary goal is to support the academic, professional, 
+                and personal development of future educators, promoting excellence in the field of education.</p>
+            <p>Programs Under EAO: </p>
+            <p>1.Bachelor of Elementary Education</p>
+            <p>2.Bachelor of Secondary Education</p>
+            <p>3.Bachelor of Physical Education</p>
+            <p>4.Bachelor of Early Childhood Education</p>
+            <p>5.Certificate in Professional Education</p>   
+            <h2 style="color: blue;">History of EAO</h2>
+            <p>The Education Academic Organization is the sole, unified and democratic representative body of its members. 
+                All bona fide undergraduate college students of Ateneo de Zamboanga University under the courses of Bachelor of 
+                Secondary Education and Bachelor of Elementary Education are automatically members of the EAO. (EAO Constitution and By Laws)</p>
+            <br>
+            <h1 style="color: green;">Liberal Arts Academic Organization(LAAO)</h1>
+            <p>The Liberal Arts Academic Organization (LAAO) at Ateneo de Zamboanga University (ADZU) is an academic student 
+                organization that represents students enrolled in the College of Liberal Arts. This organization aims to foster intellectual 
+                growth, promote academic excellence, and enhance the overall experience of Liberal Arts students.</p>
+            <p>Programs Under LAAO: </p>
+            <p>1.BA English Language Studies</p>
+            <p>2.BA Interdisciplinary Studies</p>
+            <p>3.BA International Studies</p>
+            <p>4.BA Communication</p>
+            <p>5.BA Philosophy</p>
+            <p style="margin-left: 10px;">6.BS Psychology</p>
+            <br>
+            <h1 style="color: red;">Management Academic Organization(MAO)</h1>
+            <p>The Management Academic Organization (MAO) at Ateneo de Zamboanga University (ADZU) is a student organization that 
+                represents students enrolled in the Bachelor of Science in Management program. MAO aims to support the academic, professional, 
+                and personal development of students pursuing degrees in management and business-related fields.</p>
+            <p>Programs Under MAO: </p>
+            <p>1.BS Business Administration</p>
+            <p>2.BS Legal Management</p>
+            <p>3.BS Office Administration</p>
+            <br>
+            <h1 style="color: maroon;">Nursing Academic Organization(NAO)</h1>
+            <p>The Nursing Academic Organization (NAO) at Ateneo de Zamboanga University (ADZU) is a student-led organization 
+                that represents and supports students enrolled in the Bachelor of Science in Nursing program. The primary goal of the NAO 
+                is to provide nursing students with opportunities for academic growth, professional development, and community service, while 
+                fostering a sense of solidarity and leadership among future nurses.</p>
+            <p>Programs Under NAO: </p>
+            <p>1.BS Nursing</p>
+            <h2 style="color: maroon;">History of Nao</h2>
+            <p>The Nursing Academic Organization (NAO) is the official academic organization of 
+                the Ateneo de Zamboanga University (AdZU) College of Nursing. It acts as a bridge for communication 
+                between the constituents and the university administration while promoting health-related activities and outreach 
+                initiatives. The organization is comprised of fixed 12 Executive Committee Members.</p>
+            <br>
+            <h1 style="color: orangered;">Science, Information Technology and Engineering Academic Organization(SITEAO)</h1>
+            <p>SITEAO stands for the Society of Information Technology and Engineering Academic Organization at Ateneo de 
+                Zamboanga University (ADZU). It is a student organization that represents and serves the students enrolled in the 
+                College of Information Technology and Engineering (CITE), particularly those pursuing degrees in fields related to 
+                information technology, computer science, and engineering.</p>
+            <p>Programs Under SITEAO: </p>
+            <p>1.BS Biomedical Engineering</p>
+            <p>2.BS Civil Engineering</p>
+            <p>3.BS Computer Engineering</p>
+            <p>4.BS Electronics Engineering</p>
+            <p>5.BS Computer Science</p>
+            <p>6.BS Information Technology</p>
+            <p>7.BS New Media and Computer Animation</p>
+            <p>8.BS Biology(*Medical Biology*Biological Research*Environmental Biology)</p>
+            <p>9. BS Mathematics</p>
+            <p>10. BS Statistics</p>
+            <p>11. Associate in Electronics Engineering Technology</p>
+            <h2 style="color: orangered;">History of SITEAO</h2>
+            <p>The Constitution of the Science, Information Technology, and Engineering Academic Organization (SITEAO) of the Ateneo de 
+                Zamboanga University establishes that all bona fide undergraduate students enrolled in the following programs—BS Biology, BS Computer Science, 
+                BS Computer Engineering, BS Electronics and Communications Engineering, BS Biomedical Engineering, BS New Media and Computer Animation, 
+                BS Mathematics, BS Statistics, BS Information Technology, BS Civil Engineering, and the Associate in Electronics Engineering Technology—are 
+                automatic members of SITEAO. As an academic organization grounded in Ignatian values, we strive to embody Magis, Cura Personalis, Contemplation 
+                in Action, Social Involvement, Discernment, Animo, and Excellence. Committed to the ideals of men and women for others, SITEAO dedicates itself to 
+                serving its members while fostering meaningful connections with the wider community</p>
+        </div>
+    </section>
+
+    <section id="campus-guide" class="tab-content">
+        <h2>Campus Guide</h2>
+        <div class="search-tab">
+            <input type="text" id="search-input" placeholder="Search for a location...">
+            <button id="search-button">Search</button>
+        </div>
+          
+        <div id="search-results" style="display: none;">
+            <!-- Location image and info will be displayed here -->
+        </div>
+          
+        <div id="suggestions" style="display: none;">
+            <!-- Suggestions will be magical ongong -->
+          </div>
+       
+      
+        <div class="photo-gallery">
+            <h3>Explore the Campus</h3>
+            <div class="gallery-grid">
+                <img src="LIBRARY.jpg" alt="Library">
+                <img src="Caf.jpg" alt="Cafeteria">
+                <img src="BC_building.jpg" alt="BC building">
+                <img src="Canisius Hall.jpg" alt="Canisius Hall">
+                <img src="Saurus.jpg" alt="Saurus Hall">
+                <img src="xavier_Hall.jpg" alt="Xavier Hall">
+                <img src="mpcc1 copy.jpg" alt="MPCC 1">
+                <img src="mpcc2.jpg" alt="MPCC 2">
+                <img src="backfield.jpg" alt="Backfield">
+                <img src="lawb.jpg" alt="Law building">
+            </div>
+        </div>
+
+          
+    </section>
+    
+    
+
+    <section id="contact" class="tab-content">
+        <h2>Contact Us</h2>
+        <p>Get in touch with us through email or social media.</p>
+    </section>
+
+    <!-- Modal -->
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">×</span>
+            <h2 id="modal-title"></h2>
+            <p id="modal-description"></p>
+            <div id="modal-links"></div>
+        </div>
+    </div>
+    <footer>
+        <p>&copy; 2024 Ateneo de Zamboanga University. All rights reserved. Unauthorized copying or reproduction of content is prohibited.</p>
+    </footer>
+    
+    <script src="script.js"></script>
+</body>
+</html>
